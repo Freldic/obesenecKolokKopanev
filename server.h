@@ -20,6 +20,7 @@ using namespace std;
 class Client {
 private:
     string nick;
+
 public:
     int client(int argc, char *argv[]);
     void posliSpravu1(int socket, string str);

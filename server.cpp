@@ -265,6 +265,7 @@ void* Server::spustiProgram(void* socket) {
     }
     // }
     pthread_detach(pthread_self());
+
     close(clientSock);
     return NULL;
 }
