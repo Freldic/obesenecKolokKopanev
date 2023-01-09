@@ -16,7 +16,6 @@ int Server::server(int argc,char* argv[]) {
         cout << "Pomôcka : IP-PORT \n";
         exit(1);
     }
-
     unsigned short portNum = atoi(argv[1]);
 
     // VYtvorenie sockuetu server
@@ -263,7 +262,6 @@ void* Server::spustiProgram(void* socket) {
             kolo++;
         }
     }
-    // }
     pthread_detach(pthread_self());
 
     close(clientSock);
