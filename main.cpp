@@ -17,6 +17,7 @@ int main(int argc, char * argv[]){
     }
 
     if(strcmp(argv[1],"klient") == 0){
+
         cout << "1. argument : " << argv[1] << endl;
         client->client(argc -1, argument);
 
